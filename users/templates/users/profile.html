@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+    <div class="content-section">
+        <h3 class="account-heading">{{ user.first_name }} {{user.last_name }}</h3>
+        <h6 class="text-secondary">
+            Username: {{ user.username }} <br>
+            Email: {{ user.email }}
+        </h6>
+    </div>
+
+
+{% endblock %}
